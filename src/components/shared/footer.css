@@ -1,0 +1,37 @@
+/* 
+    backgorund: #662D91
+    foreground: #E6E6E6
+*/
+footer{
+    font-size: .9rem;
+    margin-top: .2em;
+    background-color: #006F07;
+
+    .developer{
+        color: #fff;
+
+        span:hover{
+            transform: scale(1.05);
+            color: rgb(60, 245, 54);
+        }
+    }
+
+}
+
+/* 
+M O B I L E
+*/
+@media (max-width:35em){
+    footer{
+        .developer{
+            span{
+                color: rgb(144, 240, 141);
+            }
+        }
+    
+    }
+}
+
+@media (min-width:35em){
+
+}

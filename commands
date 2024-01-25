@@ -1,0 +1,4 @@
+npm run deploy -- -m "ADDED CNAME homepage"
+npm run deploy
+
+change name "homepage": "https://react.tipegraphics.co.za" and CNAME when changing domain,

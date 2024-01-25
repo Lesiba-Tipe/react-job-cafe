@@ -1,0 +1,86 @@
+/* 
+    backgorund: #662D91
+    foreground: #E6E6E6
+*/
+.home{
+    margin-top: 3em;
+    background-color:#fff ;
+}
+
+/* 
+    M O B I L E
+*/
+
+@media (max-width:35em){
+    .home > p{
+        font-size: .9rem;
+        color: #662d91;
+        margin-bottom: .5em;
+    }
+
+    .home{
+        padding-top: .5em;
+
+        .introduction{
+            display: flex;
+            justify-content: center;
+
+            
+
+        div{
+            color: #e6e6e6;
+            padding: .4em .9em;
+            width: 95%;
+            border-radius: 3px ;
+            background-color: #662d91;
+
+            p:not(.welcome-msg){
+                font-size: .9rem;
+                font-style: italic;
+                color: chartreuse;
+                
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+
+        }
+    }
+}
+
+/* 
+    D E S K T O P
+*/
+@media (min-width:35em){
+    .home > p{
+        color: #662d91;
+        margin-bottom: 1em;
+    }
+    .home{
+        padding-top: 1em;
+        .introduction{
+            display: flex;
+            justify-content: center;
+
+            div{
+                color: #e6e6e6;
+                padding: 1.3em 2em;
+                width: 50%;
+                border-radius: 10px ;
+                background-color: #662d91;
+
+                p:not(.welcome-msg){
+                    font-size: .9rem;
+                    font-style: italic;
+                    color: chartreuse;
+                    
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        }
+    }
+}

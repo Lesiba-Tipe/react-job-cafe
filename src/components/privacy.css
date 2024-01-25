@@ -1,0 +1,65 @@
+
+.disclaimer{
+    /* display: none; */
+    font-size: .8rem;
+    h4{
+        color: #006F07;
+        font-style: italic;
+        font-size: 1rem;
+    }
+}
+
+/* 
+    M O B I L E
+*/
+@media (max-width:35em){
+
+    .frame-privacy{
+        margin: 2.5em .7em 1em;
+        h1{
+
+            text-align: center;
+            color: #006F07;
+            font-size: 2rem;
+        }
+        .updated-date{
+            font-size: .8rem;
+        }
+        .privacy-policy{
+            margin: .9em;
+            padding-left: .4em;
+            h2{
+                font-size: 1.5rem;
+                margin-top: .6em;
+                margin-bottom: .6em;
+            }
+
+            h3{
+                font-size: 1.3rem;
+            }
+            
+            h4{
+                font-weight:bold;
+                font-size: 1.05rem;
+            }
+
+            
+
+            a{
+                font-style: italic;
+                color: blue;
+            }
+
+            ul{
+                padding-left: 1em;
+                li{
+                    font-size: .9em;
+                    /* color: rgb(38, 27, 199); */
+                    list-style:disc;
+                }
+            }
+        }
+        
+
+    }
+}

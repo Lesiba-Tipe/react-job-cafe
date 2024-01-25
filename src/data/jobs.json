@@ -1,0 +1,232 @@
+{
+    "":{
+        "Type":["Private","Public"],
+        "Sector": ["Hospitality", "Sales", "ICT", "Banking", "Retail", "Manufacturing", "Farming", "Finance", "Education", "Engineering"],
+        "Category":[""],
+        "Department": ["Not Specified"]
+    },
+
+    "jobs":
+    [
+        {
+            "id": "000",
+            "cloudlogo":"https://drive.google.com/uc?id=1-q-AgMfe3KA6bLokpdKGu434-kUFdkaf",
+            "logo":"../media/tipegrahics-logo.png",
+            "tittle": "Graphic Design Internship",
+            "employer": "Tipe Graphics",
+            "duration":"12 Months",
+            "closing":"30 Jan 2024",
+            "posted":"08 Jan 2024",
+            "location":"Polokwane",
+            "introduction":"Established in 2021 Tipe Graphics are graphic designers spcializing in Brand design, Web design and Web development. We focus on helping small bussines owners to brand their bussines, individuals and social media influencers with their potfolio.",
+            "description": [
+                "As an intern, You will be responsible to analys idea brought by Client and make neccesary conclusion to make a design."
+            ],
+            "qualifications":[
+                "Matric | Grade 12 | Equivalent",
+                "IT Diploma | Equivalent"
+            ],
+            "skills":[
+                "Graphic design skils",
+                "Multimedia",
+                "Adobe Ai | Adobe Ps"
+            ],
+            "apply":[
+                {
+                    "state": true,
+                    "type": "email",
+                    "name":"info@company.co.za"
+                },
+                {
+                    "state": false,
+                    "type": "online",
+                    "name":""
+                },
+                {
+                    "state": false,
+                    "type": "post",
+                    "name":"P.O Box 427 Mashashane 0743"
+                }
+            ],
+            "important":[],
+            "category":"Intern",
+            "author":"Admin"
+        },
+        {
+            "id": "001",
+            "logo":"https://drive.google.com/uc?id=1-q-AgMfe3KA6bLokpdKGu434-kUFdkaf",
+            "tittle": "Tsogosun IT Internship(Software development) ",
+            "employer": "Tipe Graphics",
+            "duration":"12 Months",
+            "closing":"30 Jan 2024",
+            "posted":"08 Jan 2024",
+            "location":"Polokwane",
+            "introduction":"Established in 2021 Tipe Graphics are graphic designers spcializing in Brand design, Web design and Web development. We focus on helping small bussines owners to brand their bussines, individuals and social media influencers with their potfolio.",
+            "description": [
+                "As an intern, You will be responsible to analys idea brought by Client and make neccesary conclusion to make a design."
+            ],
+            "qualifications":[
+                "Matric | Grade 12 | Equivalent",
+                "IT Diplma | Equivalent"
+            ],
+            "skills":[
+                "Graphic design skils",
+                "Multimedia",
+                "Adobe Ai | Adobe Ps"
+            ],
+            "apply":[
+                {
+                    "state": true,
+                    "type": "email",
+                    "name":"info@company.co.za"
+                },
+                {
+                    "state": false,
+                    "type": "online",
+                    "name":""
+                },
+                {
+                    "state": false,
+                    "type": "post",
+                    "name":"P.O Box 427 Mashashane 0743"
+                }
+            ],
+            "important":[],
+            "category":"Intern",
+            "author":"Admin"
+        },
+
+        {
+            "id": "003",
+            "logo":"https://drive.google.com/uc?id=1-q-AgMfe3KA6bLokpdKGu434-kUFdkaf",
+            "tittle": "Tsogosun IT Internship(Software development) ",
+            "employer": "Tipe Graphics",
+            "duration":"12 Months",
+            "closing":"30 Jan 2024",
+            "posted":"08 Jan 2024",
+            "location":"Polokwane",
+            "introduction":"Established in 2021 Tipe Graphics are graphic designers spcializing in Brand design, Web design and Web development. We focus on helping small bussines owners to brand their bussines, individuals and social media influencers with their potfolio.",
+            "description": [
+                "As an intern, You will be responsible to analys idea brought by Client and make neccesary conclusion to make a design."
+            ],
+            "qualifications":[
+                "Matric | Grade 12 | Equivalent",
+                "IT Diplma | Equivalent"
+            ],
+            "skills":[
+                "Graphic design skils",
+                "Multimedia",
+                "Adobe Ai | Adobe Ps"
+            ],
+            "apply":[
+                {
+                    "state": true,
+                    "type": "email",
+                    "name":"info@company.co.za"
+                },
+                {
+                    "state": false,
+                    "type": "online",
+                    "name":""
+                },
+                {
+                    "state": false,
+                    "type": "post",
+                    "name":"P.O Box 427 Mashashane 0743"
+                }
+            ],
+            "important":[],
+            "category":"Intern",
+            "author":"Admin"
+        },
+
+        {
+            "id": "005",
+            "logo":"https://drive.google.com/uc?id=1-q-AgMfe3KA6bLokpdKGu434-kUFdkaf",
+            "tittle": "Tsogosun IT Internship(Software development) ",
+            "employer": "Tipe Graphics",
+            "duration":"12 Months",
+            "closing":"30 Jan 2024",
+            "posted":"08 Jan 2024",
+            "location":"Polokwane",
+            "introduction":"Established in 2021 Tipe Graphics are graphic designers spcializing in Brand design, Web design and Web development. We focus on helping small bussines owners to brand their bussines, individuals and social media influencers with their potfolio.",
+            "description": [
+                "As an intern, You will be responsible to analyse idea brought by Client and make neccesary conclusion to make a design."
+            ],
+            "qualifications":[
+                "Matric | Grade 12 | Equivalent",
+                "IT Diplma | Equivalent"
+            ],
+            "skills":[
+                "Graphic design skils",
+                "Multimedia",
+                "Adobe Ai | Adobe Ps"
+            ],
+            "apply":[
+                {
+                    "state": true,
+                    "type": "email",
+                    "name":"info@company.co.za"
+                },
+                {
+                    "state": false,
+                    "type": "online",
+                    "name":""
+                },
+                {
+                    "state": false,
+                    "type": "post",
+                    "name":"P.O Box 427 Mashashane 0743"
+                }
+            ],
+            "important":[],
+            "category":"Intern",
+            "author":"Admin"
+        },
+        {
+            "id": "006",
+            "cloudlogo":"https://drive.google.com/uc?id=1-q-AgMfe3KA6bLokpdKGu434-kUFdkaf",
+            "logo":"../media/tipegrahics-logo.png",
+            "tittle": "Graphic Design Internship",
+            "employer": "Tipe Graphics",
+            "duration":"12 Months",
+            "closing":"30 Jan 2024",
+            "posted":"08 Jan 2024",
+            "location":"Polokwane",
+            "introduction":"Established in 2021 Tipe Graphics are graphic designers spcializing in Brand design, Web design and Web development. We focus on helping small bussines owners to brand their bussines, individuals and social media influencers with their potfolio.",
+            "description": [
+                "As an intern, You will be responsible to analys idea brought by Client and make neccesary conclusion to make a design."
+            ],
+            "qualifications":[
+                "Matric | Grade 12 | Equivalent",
+                "IT Diploma | Equivalent"
+            ],
+            "skills":[
+                "Graphic design skils",
+                "Multimedia",
+                "Adobe Ai | Adobe Ps"
+            ],
+            "apply":[
+                {
+                    "state": true,
+                    "type": "email",
+                    "name":"info@company.co.za"
+                },
+                {
+                    "state": false,
+                    "type": "online",
+                    "name":""
+                },
+                {
+                    "state": false,
+                    "type": "post",
+                    "name":"P.O Box 427 Mashashane 0743"
+                }
+            ],
+            "important":[],
+            "category":"Intern",
+            "author":"Admin"
+        }
+    ]
+
+}
