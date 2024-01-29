@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ac3ba2b.css",
-    "main.js": "/static/js/main.b51f2a1d.js",
+    "main.css": "/static/css/main.78f46a03.css",
+    "main.js": "/static/js/main.980ac9f5.js",
     "static/js/787.84a149fc.chunk.js": "/static/js/787.84a149fc.chunk.js",
-    "static/media/tipegraphics-logo.png": "/static/media/tipegraphics-logo.dab48d83b4edf58c27b8.png",
     "index.html": "/index.html",
-    "static/media/icon-close_1.svg": "/static/media/icon-close_1.f7269aa76d1bfdeb48da.svg",
-    "static/media/icon-humburger-menu_1.svg": "/static/media/icon-humburger-menu_1.332ef2478e5d71fa5e76.svg",
-    "main.7ac3ba2b.css.map": "/static/css/main.7ac3ba2b.css.map",
-    "main.b51f2a1d.js.map": "/static/js/main.b51f2a1d.js.map",
+    "static/media/icon-close.svg": "/static/media/icon-close.f7269aa76d1bfdeb48da.svg",
+    "static/media/icon-humburger-menu.svg": "/static/media/icon-humburger-menu.332ef2478e5d71fa5e76.svg",
+    "main.78f46a03.css.map": "/static/css/main.78f46a03.css.map",
+    "main.980ac9f5.js.map": "/static/js/main.980ac9f5.js.map",
     "787.84a149fc.chunk.js.map": "/static/js/787.84a149fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ac3ba2b.css",
-    "static/js/main.b51f2a1d.js"
+    "static/css/main.78f46a03.css",
+    "static/js/main.980ac9f5.js"
   ]
 }
