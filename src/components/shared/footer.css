@@ -8,8 +8,8 @@ footer{
     background-color: #006F07;
 
     .developer{
+        border-top: #fff 1px solid;
         color: #fff;
-
         span:hover{
             transform: scale(1.05);
             color: rgb(60, 245, 54);

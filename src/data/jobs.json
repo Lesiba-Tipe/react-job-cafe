@@ -6,6 +6,15 @@
         "Department": ["Not Specified"]
     },
 
+    "files":
+    [
+        {
+            "name": "Latest-z83",
+            "url": "this is url",
+            "ext": "pdf"
+        }
+    ],
+
     "jobs":
     [
         {
@@ -17,7 +26,7 @@
             "duration":"12 Months",
             "closing":"30 Jan 2024",
             "posted":"08 Jan 2024",
-            "location":"Polokwane",
+            "location":"Local",
             "introduction":"Established in 2021 Tipe Graphics are graphic designers spcializing in Brand design, Web design and Web development. We focus on helping small bussines owners to brand their bussines, individuals and social media influencers with their potfolio.",
             "description": [
                 "As an intern, You will be responsible to analys idea brought by Client and make neccesary conclusion to make a design."
@@ -185,6 +194,7 @@
         },
         {
             "id": "006",
+            "active":true,
             "cloudlogo":"https://drive.google.com/uc?id=1-q-AgMfe3KA6bLokpdKGu434-kUFdkaf",
             "logo":"../media/tipegrahics-logo.png",
             "tittle": "Graphic Design Internship",

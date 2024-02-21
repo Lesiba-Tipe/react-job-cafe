@@ -1,15 +1,20 @@
 /* 
-    backgorund: #662D91
+    backgorund: #004B75
     foreground: #E6E6E6
+    secondary: #39B54A
 */
 
 .header{
+    
     position: fixed;
     top: 0;
-    border-bottom: 1px #e6e6e6 solid;
-    color: #e6e6e6;
-    background-color: #006F07;
+    
+    color: #004B75;
+    background-color: #ffffff;
+
+    z-index: 10;
 }
+
 /* 
     MOBILE
 */
@@ -21,9 +26,17 @@
 
         width: 100%;
         height: 2.7em;
-        
-        img{
-            /* src: url('/src/assets/jobCafe-logo.png'); */
+         
+        background-color: #39B54A;
+
+        .img{
+            width: fit-content;
+            height: fit-content;
+
+           
+            img{
+                width: 2em;
+            }
         } 
 
         .navigation {
@@ -32,9 +45,9 @@
             text-align: center;
 
             position: fixed; 
-            inset: 0 0 0 40%;
+            inset: 0 0 0 30%;
             
-            box-shadow: -3px 5px 6px #8650b7;
+            box-shadow: -3px 5px 6px #39B54A;
         
             transform: translateX(100%);
             transition: transform 350ms ease-in;
@@ -44,13 +57,20 @@
             /* backdrop-filter: blur(.09rem); */
             overflow-x: hidden;
             
-            background-color: #662d91f1;
+            background-color: #39b54afd;
             
             ul{
                 display: flex;
                 flex-direction: column;
                 justify-content:space-evenly;
-                gap: .8em;
+                gap: .9em;
+
+                padding-right: 2em;
+                li{
+
+                    text-align: right;
+                    color: #ffffff;
+                }
             }
                
         }
@@ -64,7 +84,7 @@
             display: block;
             z-index: 9999;
             background-color: transparent;
-            background-image: url('../../assets/icon-humburger-menu_1.svg');
+            background-image: url('../../assets/icon-humburger-menu.svg');
             background-repeat: no-repeat;
             
             width: 1.9rem;
@@ -76,7 +96,7 @@
         }
         
         .btn-toogle-mobile-nav[aria-expanded="true"] {
-            background-image: url('../../assets/icon-close_1.svg');
+            background-image: url('../../assets/icon-close.svg');
             /* background-color: red;  */
         }
         
@@ -96,13 +116,30 @@
         width: 100%;
         height: 3.2em;
 
- 
+        border-bottom: 1px #004B75 solid;
+        img{
+            
+            width: 8em;
+        } 
+
+       
 
         nav ul{
             display: flex;
             flex-direction: row;
             justify-content:space-evenly;
             gap: 2em;
+
+            li{
+                padding: .3em .7em;
+            }
+            li:hover{
+                color: #ffffff;
+                background-color: #2D8633;
+
+                transition-timing-function: ease-out; 
+                transition: 0.5s;
+            }
         }
 
         .btn-toogle-mobile-nav{

@@ -1,0 +1,28 @@
+
+/* 
+    MOBILE
+*/
+@media (max-width:35em){
+   
+}
+
+/* 
+    DESKTOP
+*/
+@media (min-width:35em){
+   .quick-links{
+    color: #fff;
+    h4{
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    div{
+        ul{
+           li{
+                text-decoration: dotted;
+           }
+        }
+    }
+   }
+}

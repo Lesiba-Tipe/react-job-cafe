@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/svg-icon-youth-cafe-bg.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -18,6 +19,7 @@
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CFC5M7RKP"></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -26,11 +28,30 @@
       gtag('config', 'G-5CFC5M7RKP');
     </script>
 
-    <title>Job Cafe</title>
+    <!--Script for Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End of Script for Single Page Apps for GitHub Pages -->
+
+
+    <title>Youth Cafe</title>
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
+    <script src="/build/bundle.js"></script>
   </body>
 </html>

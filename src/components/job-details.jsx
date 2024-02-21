@@ -1,19 +1,23 @@
 import './job-details.css'
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Jobs from './jobs';
-import jobsData from '../data/jobs.json'
 import Advert from './advert'
-const JobDetails = ({jobs}) =>{
-    const { id } = useParams();
-    const job = jobs.find((j) => j.id === id);
+import YouthCafeDatabase from './fetchData';
+import { Link as LinkScroll } from 'react-scroll';
 
-    //console.log(id)
+
+const JobDetails = ({jobs}) =>{
+
+    const data = YouthCafeDatabase()
+    
+    const { tittle } = useParams();
+    const job = jobs.find((j) => j.tittle === tittle);
+
+    console.log(tittle)
     if (!job) {
         return <div>Jobs not found</div>;
     }
-
-   
 
     return(
 
@@ -26,7 +30,7 @@ const JobDetails = ({jobs}) =>{
                     <div className='job-header-details'>
                         {/* <img src={job.logo} /> */}
                         <div className='job-header-img-container'>
-                            <img src={require('../assets/media/tipegraphics-logo.png')} alt={job.employer} />
+                            <img src={require('../assets/media/Logo-Youth-Cafe-full.png')} alt={job.employer} />
                         </div>
                         <div className='job-info'>
                             <p>
@@ -37,11 +41,6 @@ const JobDetails = ({jobs}) =>{
                                 <span>Date Posted</span>: {job.posted}
                             </p>
 
-                            {/* <p><span>Employer</span>: {job.employer}</p>
-                            <p> <span>Position</span>: {job.tittle}</p>
-                            <p> <span>Location</span>: {job.location}</p>
-                            <p> <span>Closing Date</span>: {job.closing}</p>
-                            <p> <span>Date Posted</span>: {job.posted}</p> */}
                         </div>
                     </div>
 
@@ -56,14 +55,36 @@ const JobDetails = ({jobs}) =>{
 
                     <h4>Job description</h4>
                     <p>{job.description}</p>
+                    <br />
+                    <h4>Role resposibilties</h4>
+                    <ul>
+                        { job.responsibility ?(
+                            job.responsibility.map((responsibility) =>(
+                                <li key={responsibility}>{responsibility}</li>
+                            ))
+                        ): null
+                        }
+                    </ul>
 
+                </section>
+
+                <section className="min-req-exp">
+                    <h4>Minimum Experience</h4>
+                    <ul>
+                        { job.exp ?(
+                            job.exp.map((experience) =>(
+                                <li key={experience}>{experience}</li>
+                            ))
+                        ): null
+                        }
+                    </ul>
                 </section>
 
                 <Advert></Advert>
 
                 <section className='job-qualification-skill'>
                     <div className='job-qualification'>
-                        <h4>Qualifications</h4>
+                        <h4>Qualifications | Min Requirements</h4>
                         <ul>
                             {
                                 job.qualifications.map((qualification) => (
@@ -71,6 +92,7 @@ const JobDetails = ({jobs}) =>{
                                 ))
                             }
                         </ul> 
+                        
                     </div> 
 
                     <div className='job-skill' >
@@ -89,21 +111,43 @@ const JobDetails = ({jobs}) =>{
 
                 <section className='job-apply'>
                     <h4>How to apply</h4>
-                    {
-                        
+                    {                       
                         job.apply.map((applyMethod) =>(
 
-                            (applyMethod.state)? <p key={applyMethod.name} > {applyMethod.name}</p> : null
+                            applyMethod.state? (
+                                applyMethod.type === 'online'?
+                                    <Link key={applyMethod.name} to={applyMethod.name}>
+                                        {/* <p className='link' key={applyMethod.name}> {applyMethod.name}</p> */}
+
+                                        <button className='btn'>Apply</button>
+                                    </Link>
+                                :<p key={applyMethod.name} > {applyMethod.name}</p> 
+                            ): null
+                                    
                         ))
                     }
+                    
                 </section>
                 
                 <Advert></Advert>
 
-            </div>
-            
+            </div>        
             <div className='latest-jobs-container'>
-                <Jobs  jobs={jobsData.jobs} />
+            {data ? (
+                <div>
+                    {data.jobs ? (
+                        
+                        <Jobs jobs={data.jobs} /> 
+
+                        ) : (
+                            //TO DO: Point to a No-data-Component
+                            <p>No jobs data available.</p>
+                    )}
+                </div>
+                ) : (
+                    //TO DO: Point to a No-data-Component
+                    <p>Loading...</p>
+            )}
             </div>
         </div>
     )

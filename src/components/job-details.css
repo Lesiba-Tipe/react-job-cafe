@@ -5,7 +5,15 @@
 
 .frame-job-details{
     margin-top: 3em;
+
+    ul{
+        li{
+            list-style: circle;
+            
+        }
+    }
 }
+
 /* 
     M O B I L E
 */
@@ -27,7 +35,7 @@
         }
         
         h2{
-            color: #662d91;
+            color: #004B75;
             font-size: 2rem;
             span{
                 font-weight: bold;
@@ -40,11 +48,17 @@
 
             padding-left: .5em;
             padding-right: .5em;
+
+            color: #004B75;
+            h4,h5,p, li{
+                text-align: left;
+            }
+
             section{
                 /* margin-left: .5em;
                 margin-right: .5em; */
-                color:#e6e6e6;
-                background-color: #2D8633;
+                color: #004B75;
+                background-color:#fff;
                 padding: .5em .7em;
             }
             
@@ -56,7 +70,7 @@
                     width: 100%;
                     display: flex;
                     flex-direction: column;
-
+                    
                     .job-header-img-container{
                         display: flex;
                         justify-content: center;
@@ -64,7 +78,7 @@
                         padding: .5em;
                         
                         img{
-                            height: 7em;
+                            
                         }
                     }
         
@@ -87,12 +101,14 @@
                 }
             }
 
+            
             .job-qualification-skill{
                 h4{
                     margin-top:left;
                 }
                 ul{
                     li{
+                        list-style: circle;
                         
                     }
                 }
@@ -104,8 +120,23 @@
                 .job-skill{
                     border-top: 1px #662d91 solid;
                     /* padding-top: 2em; */
+                }               
+            }
+
+            .job-apply{
+                display: flex;
+                flex-direction: column;
+                align-content:flex-start;
+                gap: .7em;
+                button{
+                    color:#fff;
+                    padding: .4em 1.2em;
+                    background-color: #004B75;
                 }
                 
+                .btn:hover{
+                    background-color: #2D8633;
+                }
             }
     
             .latest-jobs-container{
@@ -131,51 +162,55 @@
         flex-direction: column;
         gap: 2em;
 
-
-        h4,h5,p, li{
-            text-align: left;
-        }
-
-        section{
-            color:#e6e6e6;
-            background-color: #662d91;
-            padding: 1.5em 7em;
-        }
+        .job-details-container{
+            /* background-color: #004a75a8; */
+            color: #004B75;
+            h4,h5,p, li{
+                text-align: left;
+            }
     
-        h4{
-            /* font-size: 1.3rem; */
-            font-weight: bold;
-        }
+            section{
+                padding: 1.5em 7em;
+                /* background-color:#d6d5d5; */
+            }
         
-        h2{
-            color: #662d91;
-            font-size: 2rem;
-            border-bottom: solid 1px #662d91;
-            padding-bottom: .3em;
-            span{
+            h4{
+                /* font-size: 1.3rem; */
                 font-weight: bold;
             }
-        } 
-
-        .job-details-container{
+            
+            h2{
+                
+                font-size: 2rem;
+                /* border-bottom: solid 1px #662d91; */
+                padding-bottom: .3em;
+                span{
+                    font-weight: bold;
+                }
+            }
 
             .job-header{
 
                 margin-top: 1.2em;
+
                 .job-header-details{
                     
-                    width: 80%;
                     display: flex;
                     flex-direction: row;
+                    width: 50%;
+
+                    justify-content: start;
 
                     .job-header-img-container{
                         display: flex;
                         justify-content: center;
-                        align-items: center;
+                        justify-content: center;
                         padding: .5em;
                         
+                        margin: auto;
+
                         img{
-                            height: 7em;
+                            width: fit-content;
                         }
                     }
         
@@ -183,7 +218,6 @@
                         
                         /* padding: 2em .5em; */
                         p{
-                            color: #e6e6e6;
                             span{
                                 font-weight: bold;
                             }
@@ -195,31 +229,49 @@
                     width: 70%;
                 }
             }
-        }
-        
-        .job-qualification-skill{
-            h4{
-                margin-top:left;
+
+            .job-description{
+
             }
-            ul{
-                li{
-                    list-style: circle;
+
+            .job-qualification-skill{
+                h4{
+                    margin-top:left;
+                }
+                
+                .job-qualification{
                     
+                    margin-bottom: 2em;
+                }
+                
+                .job-skill{
+                    border-top: 1px #e6e6e6 solid;
+                    padding-top: 2em;
+                }
+                
+            }
+
+            .job-apply{
+                display: flex;
+                flex-direction: column;
+                align-content:flex-start;
+                gap: .9em;
+                button{
+                    color:#fff;
+                    padding: .5em 2em;
+                    background-color: #004B75;
+                }
+                
+                .btn:hover{
+                    background-color: #2D8633;
                 }
             }
-            .job-qualification{
-                
-                margin-bottom: 2em;
-            }
-            
-            .job-skill{
-                border-top: 1px #e6e6e6 solid;
-                padding-top: 2em;
-            }
-            
         }
-        .latest-jobs-container{
-            border-top: #662d91 1px solid;
+        
+       
+
+        .latest-jobs-container {
+            /* border-top: #662d91 1px solid; */
         }
     }
 }

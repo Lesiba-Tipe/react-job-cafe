@@ -9,7 +9,7 @@ const Privacy = () => {
       <div className="disclaimer">
         <h4>Disclaimer</h4>
         <p>
-          Unless specified, Job Cafe is not in anyway affiliated with any of the
+          Unless specified, Youth Cafe is not in anyway affiliated with any of the
           internship, bursary or learnership providers featured in this website
           and does not recruit or process application for any organization. The
           material providers here is soley for informational purposes only.
@@ -68,7 +68,7 @@ const Privacy = () => {
               <p>
                 <strong>Company</strong> (referred to as either &quot;the
                 Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
-                in this Agreement) refers to Job Cafe.
+                in this Agreement) refers to Youth Cafe.
               </p>
             </li>
             <li>
@@ -129,7 +129,7 @@ const Privacy = () => {
             </li>
             <li>
               <p>
-                <strong>Website</strong> refers to Job Cafe, accessible from{" "}
+                <strong>Website</strong> refers to Youth Cafe, accessible from{" "}
                 <a
                   href="jobcafe.tipegraphics.co.za"
                   rel="external nofollow noopener"

@@ -1,6 +1,8 @@
 /* 
-    backgorund: #662D91
+    backgorund: #004B75
     foreground: #E6E6E6
+
+    secondary: ##80FF00
 */
 .home{
     margin-top: 3em;
@@ -14,12 +16,14 @@
 @media (max-width:35em){
     .home > p{
         font-size: .9rem;
-        color: #662d91;
-        margin-bottom: .5em;
+        color: #004B75;
+        padding: .5em;
+        /* padding-left: .5em;
+        padding-right: .5em; */
     }
 
     .home{
-        padding-top: .5em;
+        /* padding-top: .5em; */
 
         .introduction{
             display: flex;
@@ -32,7 +36,7 @@
             padding: .4em .9em;
             width: 95%;
             border-radius: 3px ;
-            background-color: #662d91;
+            background-color: #004B75;
 
             p:not(.welcome-msg){
                 font-size: .9rem;
@@ -54,9 +58,12 @@
 */
 @media (min-width:35em){
     .home > p{
-        color: #662d91;
+        font-size: .8rem;
+        color: #004B75;
         margin-bottom: 1em;
+        
     }
+
     .home{
         padding-top: 1em;
         .introduction{
@@ -68,12 +75,12 @@
                 padding: 1.3em 2em;
                 width: 50%;
                 border-radius: 10px ;
-                background-color: #662d91;
+                background-color: #004B75;
 
                 p:not(.welcome-msg){
                     font-size: .9rem;
                     font-style: italic;
-                    color: chartreuse;
+                    color: #80FF00;
                     
                     span{
                         font-weight: bold;
@@ -83,4 +90,6 @@
 
         }
     }
+
+    
 }
