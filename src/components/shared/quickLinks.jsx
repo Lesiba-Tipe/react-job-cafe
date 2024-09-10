@@ -2,15 +2,37 @@ import './quickLinks.css'
 import React from 'react';
 import FileDownload from '../fileDownload';
 import YouthCafeDatabase from '../fetchData';
+import { useState, useEffect } from 'react';
 
 const QuickLinks = () =>{
-  const data = YouthCafeDatabase()
+  const [data, setData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+ useEffect(() => {
+
+     const fetchData = async () => {
+         setIsLoading(true);
+         //
+         YouthCafeDatabase()
+         .then((response) => {return response.json()})
+         .then((json) => {
+             setData(json);
+             setIsLoading(false);
+         })
+         .catch((err) => console.error(err))
+         
+     };
+     
+     fetchData();
+     
+ }, []);
 
     return (
 
         <section className='quick-links'>
             <h4>Quick Links</h4>
             <div>
+              <h6>Downloads</h6>
               <ul>
                 
                 {data ? (                 
@@ -18,7 +40,7 @@ const QuickLinks = () =>{
                       {data.files ? (
                           //console.log(data.files)
                           data.files.map((file) => (                           
-                            <li><FileDownload file={file} ></FileDownload></li>
+                            <li key={file.name} ><FileDownload  file={file} ></FileDownload></li>
                             )) 
 
                           ) : (

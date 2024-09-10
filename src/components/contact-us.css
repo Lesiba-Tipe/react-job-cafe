@@ -1,0 +1,9 @@
+
+.contact-us{
+    /* margin-top: 5em; */
+    background-color: rgb(216, 216, 216);
+    
+    div{
+        height: 480px;
+    }
+}

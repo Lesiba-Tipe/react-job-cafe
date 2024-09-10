@@ -14,7 +14,7 @@ const FileDownload = ({file}) => {
 
   return (
     <div>
-      <button onClick={downloadFile}>Download {file.name}</button>
+      <button onClick={downloadFile}>{file.name}</button>
     </div>
   );
 }

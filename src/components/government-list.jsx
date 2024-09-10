@@ -4,7 +4,7 @@ import Emoji from "react-emoji-render";
 import './jobs.css'
 
 
-const Jobs = ({jobs}) => {
+const Government = ({jobs}) => {
 
     const [filteredJobs, setFilteredJobs] = useState([]);
 
@@ -56,7 +56,7 @@ const Jobs = ({jobs}) => {
             (formatDate(job.closing) || job.closing.toLowerCase() === 'Not specified'.toLowerCase()) 
             //(formatDate(job.closing) || job.closing === 'not specified') 
         ))
-
+        
         setFilteredJobs(jobFilter);
 
         //console.log("JobFilter: ", jobFilter)
@@ -67,52 +67,54 @@ const Jobs = ({jobs}) => {
     return(
 
         <section className='frame-jobs'>
-            <h4>Latest Jobs</h4>
+            <h4>Bursaries</h4>
             {            
                 filteredJobs.length === 0 ?
                 (
-                    <div>There's currently no jobs on our database, please check us later<Emoji text=":)" /> </div>
+                    <div>There's currently no bursaries on our database, please check us later!!!<Emoji text=":)" /> </div>
                 ):
                 (
                     <div className='job-container'>
                         {
-                            filteredJobs.map((job) => ( 
-                                <Link  to={`/jobs/${job.tittle.replace(/ /g, "-")}`}>                          
-                                    <div key={job.tittle} className='job-card card-grow shadow'>
+                            filteredJobs.map((job) => (                           
+                            <div key={job.tittle} className='job-card card-grow shadow'>
 
-                                        <div className='job-card-header'>
-                                            <h5>{job.employer}: {job.tittle}</h5>
-                                        </div>
+                                <div className='job-card-header'>
+                                    <h5>{job.sponsor}: {job.tittle}</h5>
+                                </div>
 
-                                        <div className='job-card-body'>
-                                            
-                                            
-                                            <div className="img-logo">
-                                                <img src={require('../assets/media/Logo-Youth-Cafe-full.png')} alt='Logo'/>
-                                            </div>
-                                            
-
-                                            
-                                                <div onClick={scrollToTop} className='job-info'>
-                                                    <p>Location: {job.location}</p>
-                                                    <p>Closing Date: {job.closing}</p>
-                                                    <p>Date Posted: {job.posted}</p>
-                                                </div>
-                                            
-
-                                        </div>
-
-                                        <div className='job-card-footer'>
-
-                                            <div className='bi bi-person-fill'>                               
-                                                <span>Posted by Admin  </span>
-                                            </div>
-
-                                            
-                                        </div>
-
+                                <div className='job-card-body'>
+                                    
+                                    
+                                    <div className="img-logo">
+                                        <img src={require('../assets/media/Logo-Youth-Cafe-full.png')} alt='Logo'/>
                                     </div>
-                                </Link>    
+                                    
+
+                                    <Link  to={`/jobs/${job.tittle}`}>
+                                        <div onClick={scrollToTop} className='job-info'>
+                                            <p>Location: {job.location}</p>
+                                            <p>Closing Date: {job.closing}</p>
+                                            <p>Date Posted: {job.posted}</p>
+                                        </div>
+                                    </Link>
+
+                                </div>
+
+                                <div className='job-card-footer'>
+
+                                    <div className='bi bi-person-fill'>                               
+                                        <span> Posted by: Admin  </span>
+                                    </div>
+
+                                    <div className='btn-mobile'>
+                                        <Link to={`/bursaries/${job.id}`}>
+                                        <button className='btn'>Go &gt;&gt;</button>
+                                        </Link>
+                                    </div>
+                                </div>
+
+                            </div>
 
                             ))
                         
@@ -125,6 +127,6 @@ const Jobs = ({jobs}) => {
     )
 }
 
-export default Jobs;
+export default Government;
 
 

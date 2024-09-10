@@ -66,6 +66,8 @@
 
     .home{
         padding-top: 1em;
+
+        
         .introduction{
             display: flex;
             justify-content: center;
@@ -93,3 +95,6 @@
 
     
 }
+
+
+

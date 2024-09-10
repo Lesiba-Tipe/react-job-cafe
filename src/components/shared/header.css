@@ -103,7 +103,10 @@
     }
 }
 
-
+/* 
+    TABLET 
+    @media (min-width:35em max-width:50em)
+*/
 @media (min-width:35em){
 
     .header{

@@ -1,0 +1,60 @@
+
+
+
+.about{
+    gap: 2em;
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+
+    img{
+        max-width: 40%;
+        height: auto;
+        display: block;
+        margin: auto; /* Center the image */ 
+    
+        border-radius: 3px;
+        filter: grayscale(30%);
+    }
+
+    h3{
+        text-align: center;
+        font-size: 1.5em;
+        color:#004B75;
+    }
+
+    .about-us{
+        div{
+            text-align: left;
+            padding-left: 2.5em;
+
+            
+
+            p{
+                p > span{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    .mission{
+        div{
+            padding-right: 2.5em;
+            text-align: right;
+
+            p{
+            }
+        }
+    }
+
+    .values{
+        div{
+            padding-left: 2.5em;
+            text-align: left; 
+            p{
+            }
+        }
+    }
+
+}

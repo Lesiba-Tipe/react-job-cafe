@@ -1,78 +1,68 @@
 import './job-details.css'
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Jobs from './jobs';
+//import bursaries from './bursaries';
 import Advert from './advert'
 import YouthCafeDatabase from './fetchData';
 import { Link as LinkScroll } from 'react-scroll';
 
 
-const JobDetails = ({jobs}) =>{
+const BursaryDetails = ({bursaries}) =>{
 
     const data = YouthCafeDatabase()
     let { tittle } = useParams();
     tittle = decodeURIComponent(tittle.replace(/-/g, ' '));
-    console.log('Tittle:',tittle)
-    const job = jobs.find((j) => j.tittle === tittle);
+    console.log('Tittle:' + tittle)
+    const bursary = bursaries.find((j) => j.tittle === tittle);
 
-    if (!job) {
-        return <div>Jobs not found</div>;
+    if (!bursary) {
+        return <div>No bursaries found</div>;
     }
 
     return(
 
         <div className='frame-job-details'>
             <div className='job-details-container' >
-                <h2> <span>{job.employer}</span>: {job.tittle}</h2>
+                <h2> <span>{bursary.sponsor}</span>: {bursary.tittle}</h2>
 
                 <section className='job-header'>
 
                     <div className='job-header-details'>
-                        {/* <img src={job.logo} /> */}
+                        {/* <img src={bursary.logo} /> */}
                         <div className='job-header-img-container'>
-                            <img src={require('../assets/media/Logo-Youth-Cafe-full.png')} alt={job.employer} />
+                            <img src={require('../assets/media/Logo-Youth-Cafe-full.png')} alt={bursary.employer} />
                         </div>
                         <div className='job-info'>
                             <p>
-                                <span>Employer</span>: {job.employer} <br/>
-                                <span>Position</span>: {job.tittle} <br/>
-                                <span>Location</span>: {job.location} <br/>
-                                <span>Closing Date</span>: {job.closing} <br/>
-                                <span>Date Posted</span>: {job.posted}
+                                <span>Sponsor</span>: {bursary.sponsor} <br/>
+                                <span>Tittle</span>: {bursary.tittle} <br/>
+                                <span>Location</span>: {bursary.location} <br/>
+                                <span>Closing Date</span>: {bursary.closing} <br/>
+                                <span>Date Posted</span>: {bursary.posted}
                             </p>
 
                         </div>
                     </div>
 
                     <div className='job-header-about'>
-                        <h5>About {job.employer}</h5>
-                        <p>{job.introduction}</p>
+                        <h5>About {bursary.sponsor}</h5>
+                        <p>{bursary.introduction}</p>
                     </div>
 
                 </section>
 
                 <section className='job-description'>
 
-                    <h4>Job description</h4>
-                    <p>{job.description}</p>
-                    <br />
-                    <h4>Role resposibilties</h4>
-                    <ul>
-                        { job.responsibility ?(
-                            job.responsibility.map((responsibility) =>(
-                                <li key={responsibility}>{responsibility}</li>
-                            ))
-                        ): null
-                        }
-                    </ul>
-
+                    <h4>bursary description</h4>
+                    <p>{bursary.description}</p>
+                   
                 </section>
 
                 <section className="min-req-exp">
                     <h4>Minimum Experience</h4>
                     <ul>
-                        { job.exp ?(
-                            job.exp.map((experience) =>(
+                        { bursary.exp ?(
+                            bursary.exp.map((experience) =>(
                                 <li key={experience}>{experience}</li>
                             ))
                         ): null
@@ -87,7 +77,7 @@ const JobDetails = ({jobs}) =>{
                         <h4>Qualifications | Min Requirements</h4>
                         <ul>
                             {
-                                job.qualifications.map((qualification) => (
+                                bursary.qualifications.map((qualification) => (
                                     <li key={qualification} >{qualification}</li>
                                 ))
                             }
@@ -95,16 +85,7 @@ const JobDetails = ({jobs}) =>{
                         
                     </div> 
 
-                    <div className='job-skill' >
-                        <h4>Skills</h4>     
-                        <ul>
-                            {
-                                job.skills.map((skill) => (
-                                    <li key={skill} >{skill}</li>
-                                ))
-                            }
-                        </ul>
-                    </div>
+                    
                 </section>
 
                 <Advert></Advert>
@@ -112,7 +93,7 @@ const JobDetails = ({jobs}) =>{
                 <section className='job-apply'>
                     <h4>How to apply</h4>
                     {                       
-                        job.apply.map((applyMethod) =>(
+                        bursary.apply.map((applyMethod) =>(
 
                             applyMethod.state? (
                                 applyMethod.type === 'online'?
@@ -133,24 +114,25 @@ const JobDetails = ({jobs}) =>{
 
             </div>        
             <div className='latest-jobs-container'>
-            {data ? (
-                <div>
-                    {data.jobs ? (
-                        
-                        <Jobs jobs={data.jobs} /> 
+                <h5>Latest bursaries</h5>
+                {data ? (
+                    <div>
+                        {data.bursaries ? (
+                            
+                            <bursaries bursaries={data.bursaries} /> 
 
-                        ) : (
-                            //TO DO: Point to a No-data-Component
-                            <p>No jobs data available.</p>
-                    )}
-                </div>
-                ) : (
-                    //Loading
-                    <div class="loader"></div>
-            )}
+                            ) : (
+                                //TO DO: Point to a No-data-Component
+                                <p>No bursaries data available.</p>
+                        )}
+                    </div>
+                    ) : (
+                        //Loading
+                        <div class="loader"></div>
+                )}
             </div>
         </div>
     )
 }
 
-export default JobDetails;
+export default BursaryDetails;

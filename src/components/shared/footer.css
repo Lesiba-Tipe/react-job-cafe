@@ -1,18 +1,23 @@
 /* 
-    backgorund: #662D91
-    foreground: #E6E6E6
+    backgorund: #004B75;
+    foreground: #006F07
 */
 footer{
     font-size: .9rem;
     margin-top: .2em;
-    background-color: #006F07;
+    background-color: #004B75;
 
     .developer{
         border-top: #fff 1px solid;
         color: #fff;
+        span{
+            /* transform: scale(1.05); */
+            color: #fff;
+        }
         span:hover{
-            transform: scale(1.05);
-            color: rgb(60, 245, 54);
+            color: #000;
+            /* background-color: #fff; */
+           
         }
     }
 
@@ -23,6 +28,9 @@ M O B I L E
 */
 @media (max-width:35em){
     footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
         .developer{
             span{
                 color: rgb(144, 240, 141);
