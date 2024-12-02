@@ -31,7 +31,7 @@ const Jobs = ({jobs}) => {
             const year = closingDate.slice(-4);
     
             const monthNames = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
-            const month = monthNames.findIndex( name => name == monthName) + 1
+            const month = monthNames.findIndex( name => name === monthName) + 1
     
             const formatClosingDate = `${year}-${month}-${day}`
     

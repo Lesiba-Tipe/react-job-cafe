@@ -32,7 +32,6 @@ const QuickLinks = () =>{
         <section className='quick-links'>
             <h4>Quick Links</h4>
             <div>
-              <h6>Downloads</h6>
               <ul>
                 
                 {data ? (                 
@@ -40,7 +39,9 @@ const QuickLinks = () =>{
                       {data.files ? (
                           //console.log(data.files)
                           data.files.map((file) => (                           
-                            <li key={file.name} ><FileDownload  file={file} ></FileDownload></li>
+                            <li key={file.name} >
+                              <FileDownload  file={file} ></FileDownload>
+                            </li>
                             )) 
 
                           ) : (

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.76 87.96">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #009245;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        font-family: MyriadPro-SemiboldIt, 'Myriad Pro';
+        font-size: 9.24px;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="Donate">
+    <path class="cls-1" d="M23.17,29.53l-11.42,13.53,25.05,23.09S43.65,15.45,88.9,9.18L80.86,.27s-24.43-6.62-46.59,45.42l-11.1-16.16Z"/>
+    <text class="cls-2" transform="translate(0 85.65)"><tspan class="cls-6" x="0" y="0">P</tspan><tspan class="cls-3" x="4.79" y="0">ayment </tspan><tspan class="cls-5" x="36" y="0">w</tspan><tspan class="cls-3" x="42.49" y="0">as su</tspan><tspan class="cls-4" x="61.54" y="0">cc</tspan><tspan x="69.3" y="0">essfull</tspan></text>
+  </g>
+</svg>

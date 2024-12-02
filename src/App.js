@@ -18,6 +18,8 @@ import AboutUs from './components/about-us';
 import ContactUs from './components/contact-us';
 import EVasity from './components/e-vasity';
 import BursaryDetails from './components/bursary-details';
+import Donate from './components/donate';
+import { PayFastSuccess } from './components/success';
 
 function App() {
 
@@ -191,6 +193,8 @@ function App() {
             <Route path='/contact-us' element={<ContactUs/>} >  </Route>
             <Route path='/about-us' element={<AboutUs/>} >  </Route>
             <Route path='/privacy' element={<Privacy/>} >  </Route>
+            <Route path='/donate' element={<Donate/>} >   </Route>
+            <Route path='/donate/success' element={<PayFastSuccess/>} />
           </Routes>
         </div>
         <Footer/>

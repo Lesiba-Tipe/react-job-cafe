@@ -1,0 +1,26 @@
+
+.checkout{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+
+    div > h5{
+        color: #009245;
+        font-style: italic;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    h3{
+
+        color: #004B75;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.3em;
+
+        span{
+            font-style: normal;
+            font-weight: none;
+        }
+    }
+}

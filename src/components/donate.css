@@ -1,0 +1,86 @@
+/* 
+    backgorund: #004B75
+    foreground: #E6E6E6
+    secondary: #39B54A
+*/
+
+@media (min-width:35em){
+    .amount-selector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+      }
+      
+    .button-group {
+      margin-bottom: 10px;
+    }
+    
+    .btn-job-cafe {
+      color: #004B75;
+      background-color: #fcfcfc;
+      border: 1px solid #004B75;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      /* border-radius: 5px; */
+      font-size: 16px;
+    }
+    
+    .btn-job-cafe.selected {
+      background-color: #004B75;
+      color: white;
+      border: 1px solid #e7e7e7;
+    }
+    
+    .btn-job-cafe:hover {
+      color: #ffffff;
+      background-color: #004B75;
+
+      transition-timing-function: ease-out; 
+      transition: 0.5s;
+    }
+    
+    .custom-input {
+      color: #004B75;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #004B75;
+      width: 200px;
+      text-align: center;
+    }
+    
+    .img-donate{
+      width: 100%;/* Full width of the viewport */
+      height: 300px; /* Custom height */
+      object-fit: cover; /* Maintain aspect ratio and cover the container */
+      display: block; /* Optional: removes inline spacing */
+    }
+
+    .text-donate{
+      font-size: 3em;
+    }
+
+    .overlay-text{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; /* Text color */
+      font-size: 24px; /* Adjust font size */
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+      z-index: 1; /* Ensure the text is on top of the image */
+    }
+
+    .personal-details{
+      width: fit-content;
+      padding: 1em 3em;
+      /* margin-bottom: 10px; */
+      /* border: 1px solid #004B75; */
+      /* background-color: aquamarine; */
+      display: flex;
+      gap: .5em;
+    }
+}
