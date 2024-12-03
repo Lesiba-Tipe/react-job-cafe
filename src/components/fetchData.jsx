@@ -5,7 +5,6 @@ const YouthCafeDatabase = async () => {
   ? process.env.REACT_APP_YOUTHCAFE_DATABASE_URL 
   : process.env.REACT_APP_LOCALHOST
 
-
   return await fetch(url) //Returns a promise
 };
 
