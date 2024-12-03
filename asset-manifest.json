@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e9eb12f.css",
-    "main.js": "/static/js/main.4a9ae961.js",
+    "main.css": "/static/css/main.48f526b7.css",
+    "main.js": "/static/js/main.7a16ba8b.js",
     "static/js/787.84a149fc.chunk.js": "/static/js/787.84a149fc.chunk.js",
     "static/media/presentation_1.jpg": "/static/media/presentation_1.ccef660401bbd6b3d132.jpg",
     "index.html": "/index.html",
     "static/media/icon-close.svg": "/static/media/icon-close.f7269aa76d1bfdeb48da.svg",
     "static/media/icon-humburger-menu.svg": "/static/media/icon-humburger-menu.332ef2478e5d71fa5e76.svg",
-    "main.3e9eb12f.css.map": "/static/css/main.3e9eb12f.css.map",
-    "main.4a9ae961.js.map": "/static/js/main.4a9ae961.js.map",
+    "main.48f526b7.css.map": "/static/css/main.48f526b7.css.map",
+    "main.7a16ba8b.js.map": "/static/js/main.7a16ba8b.js.map",
     "787.84a149fc.chunk.js.map": "/static/js/787.84a149fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e9eb12f.css",
-    "static/js/main.4a9ae961.js"
+    "static/css/main.48f526b7.css",
+    "static/js/main.7a16ba8b.js"
   ]
 }
